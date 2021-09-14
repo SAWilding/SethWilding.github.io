@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap');
+
+body {
+    background-color: cornflowerblue;
+}
+h1, h2 {
+    font-family: "Bree Serif", Arial, sans-serif;
+}
+li, p {
+    font-family: "Poppins", Verdana, sans-serif;
+}
+nav {
+    background-color: white;
+}
+header h1 {
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px outset;
+    color: rgb(0, 145, 194);
+}
+footer p {
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    max-height: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
