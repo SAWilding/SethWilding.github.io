@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Course Portal</title>
         <link rel="stylesheet" href="style.css" />
+        <script>
+            let d = new Date();
+            let year = d.getFullYear();
+        </script>
     </head>
     <body>
         <header>
@@ -24,8 +28,11 @@
             </ul>
         </nav>
         <footer>
-            <p>&copy; 2021 | Seth Wilding | <a href=" https://developer.mozilla.org/en-US">MDN Documentation Site</a> | BYU-Idaho | Last updated: 9/14/2021 2:21 pm </p>
-        </footer>
-        
+            <p>
+                &copy; <script>document.write(year);</script> | Seth Wilding | 
+                <a href=" https://developer.mozilla.org/en-US">MDN Documentation Site</a> | BYU-Idaho | Last updated: 
+                <script>document.write(document.lastModified);</script>
+            </p>
+        </footer> 
     </body>
 </html>
