@@ -16,6 +16,9 @@ body {
     background-color: cornflowerblue;
     margin: 0px;
 }
+main {
+    background-color: white;
+}
 h1, h2 {
     font-family: "Bree Serif", Arial, sans-serif;
     padding: 10px
