@@ -15,7 +15,6 @@ Table of Contents
 nav a {
     color: black;
     text-decoration: none;
-    font-size: 1.25em;
     position: relative;
     transition: 0.4s;
 }
@@ -95,11 +94,11 @@ nav a:hover:after {
 }
 
 #dp_body h1, #dp_body h2 {
-    font-family: "Carter One";
+    font-family: "Carter One", Arial, sans-serif;
 }
 
 #dp_body p, #dp_body li {
-    font-family: "Ubuntu";
+    font-family: "Ubuntu", Helvetica, sans-serif;
 }
 
 #dp_main {
