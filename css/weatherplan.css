@@ -1,5 +1,5 @@
 #color1 {
-    background-color: #E6C229;
+    background-color: #e9ee9d;
     color: black;
 }
 
@@ -9,7 +9,7 @@
 }
 
 #color3 {
-    background-color: #2F3061;
+    background-color: #5f90b1;
     color: white;
 }
 
@@ -21,7 +21,10 @@
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, nav li {
+h1,
+h2,
+h3,
+nav li {
     font-family: "Bree Serif", Arial, Helvetica, sans-serif;
 }
 
@@ -29,19 +32,22 @@ p {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
-nav, footer, nav li a, nav li {
-    background-color: #2F3061;
+nav,
+footer,
+nav li a,
+nav li {
+    background-color: #5f90b1;
     color: white;
     text-decoration: none;
     text-align: center;
     list-style-type: none;
 }
 
-nav a:hover{
-    background-color: #E6C229;
+nav a:hover {
+    background-color: #e9ee9d;
     color: black;
-    
 }
+
 nav a {
     display: block;
     transition: 0.4s;
@@ -61,12 +67,18 @@ main {
     background-color: white;
 }
 
-main, footer {
+main,
+footer {
     padding: 1.5em;
 }
 
-nav, header {
+nav,
+header {
     padding: 0.5em;
+}
+
+header img {
+    height: 100px;
 }
 
 @media (min-width: 700px) {

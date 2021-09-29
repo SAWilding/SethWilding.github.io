@@ -7,20 +7,25 @@ Table of Contents
 4. Desktop
 */
 
+
 /* 1. Imports ------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Ubuntu&display=swap');
 
 /* 2a. General ---------------------- */
+
 nav a {
     color: black;
     text-decoration: none;
     position: relative;
     transition: 0.4s;
 }
+
 nav a:hover {
     color: black;
 }
+
 nav a:after {
     content: "";
     position: absolute;
@@ -30,30 +35,39 @@ nav a:after {
     border-bottom: 2px solid black;
     transition: 0.4s;
     color: black;
-  }
+}
 
 nav a:hover:after {
     width: 100%;
 }
+
+
 /* Home Page -------------*/
+
 #h_body {
     background-color: cornflowerblue;
     margin: 0px;
 }
 
-#h_body h1, #h_body h2 {
+#h_body h1,
+#h_body h2 {
     font-family: "Bree Serif", Arial, sans-serif;
     padding: 10px
 }
-#h_body li, #h_body p {
+
+#h_body li,
+#h_body p {
     font-family: "Poppins", Verdana, sans-serif;
 }
+
 #h_body ul {
     padding-bottom: 10px;
 }
+
 #h_nav {
     background-color: white;
 }
+
 #h_header h1 {
     text-align: center;
 }
@@ -62,9 +76,11 @@ nav a:hover:after {
     border-bottom: 2px outset;
     color: rgb(0, 145, 194);
 }
+
 #h_body footer p {
     text-align: center;
 }
+
 #home-img {
     max-width: 100%;
     max-height: 65%;
@@ -72,12 +88,17 @@ nav a:hover:after {
     margin: auto;
     box-shadow: 3px 3px 5px black;
 }
+
 #h_body footer a {
     color: black;
 }
 
+
 /* Design Principles CSS ----------------*/
+
+
 /* Navigation bar */
+
 #dp_nav {
     background-color: lightgreen;
     padding: 5px;
@@ -87,17 +108,21 @@ nav a:hover:after {
     list-style-type: none;
 }
 
+
 /* Main content */
+
 #dp_body {
     margin: 0;
     background-color: lightgreen;
 }
 
-#dp_body h1, #dp_body h2 {
+#dp_body h1,
+#dp_body h2 {
     font-family: "Carter One", Arial, sans-serif;
 }
 
-#dp_body p, #dp_body li {
+#dp_body p,
+#dp_body li {
     font-family: "Ubuntu", Helvetica, sans-serif;
 }
 
@@ -119,37 +144,46 @@ nav a:hover:after {
 
 
 /* Footer */
+
 #dp_footer {
     text-align: center;
     background-color: lightgreen;
     margin: 2em;
 }
 
+
 /* 2b. Mobile ----------------------------*/
+
 #dp_main {
     display: grid;
     grid-template-columns: auto;
     gap: 0;
     padding: 2em;
 }
+
 .dp_principle_card img {
     margin: auto;
     display: block;
     border: 1px solid black;
     height: 800px;
 }
+
 #proximity_card {
     grid-row: 2/3;
 }
+
 #alignment_card {
     grid-row: 3/4;
 }
+
 #contrast_card {
     grid-row: 4/5;
 }
-.dp_principle_card h2{
+
+.dp_principle_card h2 {
     text-align: center;
 }
+
 #dp_main h1 {
     grid-column: 1/4;
     text-align: center;
@@ -157,7 +191,10 @@ nav a:hover:after {
 
 
 /* Midsize -------------------------------*/
+
+
 /* Home Page */
+
 @media (min-width: 32.5em) {
     #home-img {
         display: inline;
@@ -165,19 +202,19 @@ nav a:hover:after {
         width: 300px;
         margin: 20px;
     }
-    
     #home-name {
         display: inline;
         text-align: start;
     }
-    
     #h_nav {
         min-height: 500px;
         width: 100%;
     }
 }
 
+
 /* Design Principles Page */
+
 @media (min-width: 600px) {
     #dp_main {
         grid-template-columns: 1fr 1fr;
@@ -202,7 +239,9 @@ nav a:hover:after {
     }
 }
 
+
 /* Desktop --------------------------------*/
+
 @media (min-width: 1000px) {
     #dp_main {
         display: grid;
