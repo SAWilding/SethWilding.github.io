@@ -1,0 +1,82 @@
+#color1 {
+    background-color: #E6C229;
+    color: black;
+}
+
+#color2 {
+    background-color: #797270;
+    color: white;
+}
+
+#color3 {
+    background-color: #2F3061;
+    color: white;
+}
+
+#font1 {
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+}
+
+#font2 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, nav li {
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+nav, footer, nav li a, nav li {
+    background-color: #2F3061;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a:hover{
+    background-color: #E6C229;
+    color: black;
+    
+}
+nav a {
+    display: block;
+    transition: 0.4s;
+    font-size: 1.5em;
+}
+
+nav ul {
+    padding: 0;
+}
+
+body {
+    background-color: #797270;
+    margin: 0;
+}
+
+main {
+    background-color: white;
+}
+
+main, footer {
+    padding: 1.5em;
+}
+
+nav, header {
+    padding: 0.5em;
+}
+
+@media (min-width: 700px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    header {
+        text-align: center;
+    }
+}
