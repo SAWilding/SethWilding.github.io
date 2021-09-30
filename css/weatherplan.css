@@ -82,6 +82,14 @@ header img {
     height: 100px;
 }
 
+#old_man, #young_woman {
+    max-height: 300px;
+}
+
+img {
+    max-width: 100%;
+}
+
 @media (min-width: 700px) {
     nav ul {
         display: flex;
