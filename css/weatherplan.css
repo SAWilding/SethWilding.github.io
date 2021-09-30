@@ -75,6 +75,7 @@ footer {
 nav,
 header {
     padding: 0.5em;
+    text-align: center;
 }
 
 header img {
@@ -87,8 +88,5 @@ header img {
     }
     nav ul li {
         flex: 1 1 100%;
-    }
-    header {
-        text-align: center;
     }
 }
