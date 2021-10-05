@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston, ID | Wild Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="preston.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="../images/wild_weather_logo.png" alt="Site plan logo">
+            <div id="siteName">
+                <h1>Wild Weather</h1>
+                <p>Quick, Easy Weather</p>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776 Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Preston Idaho</h1>
+            <section><p>Hero w/ weather summary</p></section>
+            <section><p>5 day forecast</p></section>
+            <section><p>Article</p></section>
+            <section><p>Contact Information</p></section>
+        </main>
+        <footer>
+            <p>
+                &copy;
+                <span id="copyrightYear"></span> Wild Weather |
+                <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                <span id="dateLastModified"></span>
+            </p>
+        </footer>
+    </div>
+    <script src="preston.js"></script>
+</body>
+</html>

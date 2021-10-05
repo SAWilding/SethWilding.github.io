@@ -1,0 +1,140 @@
+
+#font1 {
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+}
+
+#font2 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav li {
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+nav,
+footer,
+nav li a,
+nav li {
+    background-color: #5f90b1;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a:hover {
+    background-color: #e9ee9d;
+    color: black;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li a{
+    border: 1px solid rgba(0,0,0,0.5);
+    margin: 10px 0px 10px;
+    padding: 5px 0px 5px;    
+    display: block;
+    transition: 0.5s;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+body {
+    background-color: #797270;
+    margin: 0;
+}
+
+main {
+    background-color: white;
+}
+
+main,
+footer {
+    padding: 1.5em;
+}
+
+footer a {
+    color: black;
+}
+
+nav,
+header {
+    padding: 0.5em;
+    color: white;
+}
+
+header img {
+    height: 100px;
+    display: inline;
+    padding-left: 15px;
+}
+
+#siteName {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#siteName h1, #siteName p {
+    margin: 5px 0px 5px;
+}
+header {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+}
+button {
+    display: block;
+    height: 50px;
+    width: 100%;
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: #5f90b1;
+    color: white;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: #e9ee9d;
+    color: black;
+}
+nav ul.hide {
+    display: none;
+}
+
+section {
+    background-color: rgba(0,0,0,0.1);
+    border: 1px dotted gray;
+    margin: 5px;
+}
+
+@media (min-width: 900px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        margin: 0px;
+        margin-right: -1px;
+        padding: 0px;
+    }
+    button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+}
