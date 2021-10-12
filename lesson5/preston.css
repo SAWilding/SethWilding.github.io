@@ -64,13 +64,6 @@ main {
     background-color: white;
 }
 
-nav {
-    margin-bottom: -20px;
-}
-
-footer {
-    padding: 1.5em;
-}
 
 footer a {
     color: black;
@@ -121,12 +114,6 @@ nav ul.hide {
     display: none;
 }
 
-section {
-    background-color: rgba(0,0,0,0.1);
-    border: 1px dotted gray;
-    margin: 5px;
-}
-
 /* Banner style rules */
 
 #banner {
@@ -140,6 +127,14 @@ section {
 
 
 /* Weather summary style rules */
+nav {
+    margin-bottom: -20px;
+}
+
+#pageHeader {
+    padding: 1rem;
+}
+
 #summaryContainer {
     position: relative;
     width: 100%;
@@ -147,15 +142,16 @@ section {
 }
 
 #weatherSummary {
-    border: 1px dotted black;
     padding: 1rem;
+    width: 225px;
+    height: 250px;
 }
 
 #weatherSummary ul{
     list-style-type: none
 }
 
-#weatherSummary h1{
+#weatherSummary h2{
     text-decoration: underline;
 }
 
@@ -166,11 +162,25 @@ section {
     margin: 0 auto;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+}
+
+#labels {
+    text-align: end;
+    padding: 0;
+}
+#values {
+    padding-left: 10px;
+}
+
 /* Article style rules */
 #articleContainer {
     position: relative;
-    padding: 1rem;
-    border: 1px solid black;
+    padding: 1.5rem;
 }
 
 #articleContainer img {
@@ -178,6 +188,32 @@ section {
     width: 100%;
 }
 
+/* Contact information and footer bar style rules */
+
+#contactInfo {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    text-align: start;
+    background-color: #797270;
+    color: white;
+}
+
+#prestonMap {
+    display: block;
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #797270;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #797270;
+}
+
+#footerBar {
+    padding: .5rem;
+    background-color: #5f90b1;
+}
 @media (min-width: 900px) {
     nav ul {
         display: flex;

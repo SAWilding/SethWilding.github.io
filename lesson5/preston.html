@@ -33,26 +33,35 @@
             </ul>
         </nav>
         <main>
-            <h1>Preston, Idaho</h1>
-            <div id="summaryContainer">
+            <h1 id="pageHeader">Preston, Idaho</h1>
+            <section id="summaryContainer">
                 <img id= "heroImage" src="../images/preston_hero.jpg" alt="Downtown Preston Idaho">
                 <div id="weatherSummary">
-                    <h1>Weather Summary</h1>
-                    <ul>
-                        <li>Currently: Sunny</li>
-                        <li>High: 76 &#8457;</li>
-                        <li>Wind Chill: &#8457;</li>
-                        <li>Humidity: 69%</li>
-                        <li>Wind Speed: 5 mph</li>
-                    </ul>
+                    <h2>Weather Summary</h2>
+                    <div class="grid">
+                        <ul id="labels">
+                            <li>Currently:</li>
+                            <li>High:</li>
+                            <li>Wind Chill:</li>
+                            <li>Humidity:</li>
+                            <li>Wind Speed:</li>
+                        </ul>
+                        <ul id="values">
+                            <li>Sunny</li>
+                            <li>76 &#8457;</li>
+                            <li>&#8457;</li>
+                            <li>69%</li>
+                            <li>5 mph</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <hr>
 
-
-            <section><p>5 day forecast</p></section>
+            <section id="forecast"></section>
             <article id="articleContainer">
                 <img src="../images/article_placeholder_image.jpg" alt="Placeholder image">
-                <h1>Article Title</h1>
+                <h2>Article Title</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam, maiores praesentium assumenda, quibusdam
                     eaque ullam esse magni distinctio dolore voluptate odio officia accusamus consectetur eligendi debitis, alias
@@ -66,11 +75,19 @@
             </article>
         </main>
         <footer>
-            <div id="contactInfo">
-                <h1>Contact Information</h1>
-                <p>&#9742; (777)-777-7777</p>
-
-            </div>
+            <section id="footer">
+                <div id="contactInfo">
+                    <h2>Contact Information</h2>
+                    <p>&#128231; wildweather@wildweather.it</p>
+                    <p>&#9742; (777)-777-7777</p>
+                    <div id="iconBar">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_icon.png" alt="Facebook icon"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_icon.png" alt="Instagram Icon"></a>
+                        <a href="https://twitter.com/?lang=en" target="_blank"><img src="../images/twitter_icon.png" alt="Twitter icon"></a>
+                    </div>             
+                </div>                
+                <img id="prestonMap" src="../images/preston_map.png" alt="Map of Preston Idaho">
+            </section>
             <div id="footerBar">
                 <p>
                     &copy;
