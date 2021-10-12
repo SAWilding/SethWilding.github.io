@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston, ID | Wild Weather</title>
+    <link rel="shortcut icon" href="../images/wild_weather_icon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="preston.css">
+</head>
+<body>
+    <div id="wrapper">
+        <aside id="banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </aside>
+        <header>
+            <img src="../images/wild_weather_logo.png" alt="Site plan logo">
+            <div id="siteName">
+                <h1>Wild Weather</h1>
+                <p>Quick, Easy Weather</p>
+            </div>
+        </header>
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../index.html">Home</a></li>
+                <li><a class = "active" href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Preston, Idaho</h1>
+            <div id="summaryContainer">
+                <img id= "heroImage" src="../images/preston_hero.jpg" alt="Downtown Preston Idaho">
+                <div id="weatherSummary">
+                    <h1>Weather Summary</h1>
+                    <ul>
+                        <li>Currently: Sunny</li>
+                        <li>High: 76 &#8457;</li>
+                        <li>Wind Chill: &#8457;</li>
+                        <li>Humidity: 69%</li>
+                        <li>Wind Speed: 5 mph</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <section><p>5 day forecast</p></section>
+            <article id="articleContainer">
+                <img src="../images/article_placeholder_image.jpg" alt="Placeholder image">
+                <h1>Article Title</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam, maiores praesentium assumenda, quibusdam
+                    eaque ullam esse magni distinctio dolore voluptate odio officia accusamus consectetur eligendi debitis, alias
+                    perferendis magnam veniam vero sit deserunt vitae cum. Et earum possimus optio reiciendis ad, delectus ullam odit
+                    repellendus, quos repellat fugit harum culpa dicta, minima maiores? Facere illo eum, alias iusto quas aut adipisci sequi
+                    eius tempore dignissimos voluptate, labore tempora nesciunt. Autem, consequuntur enim illum sed blanditiis magnam,
+                    dolorem corrupti maxime perspiciatis temporibus est? At, distinctio minima repudiandae fugit earum nesciunt modi quod
+                    eum dolorum excepturi repellendus consequatur similique vero aliquid.
+                </p>
+
+            </article>
+        </main>
+        <footer>
+            <div id="contactInfo">
+                <h1>Contact Information</h1>
+                <p>&#9742; (777)-777-7777</p>
+
+            </div>
+            <div id="footerBar">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> Wild Weather |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="preston.js"></script>
+</body>
+</html>
