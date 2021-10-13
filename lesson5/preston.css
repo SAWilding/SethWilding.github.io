@@ -37,7 +37,6 @@ nav a:hover {
 .active {
     font-weight: bold;
     text-decoration: underline;
-    background-color: #e9ee9d;
     color: black;
 }
 nav ul {
@@ -56,7 +55,6 @@ nav li a{
 }
 
 body {
-    background-color: #797270;
     margin: 0;
 }
 
@@ -73,6 +71,10 @@ nav,
 header {
     padding: 0.5em;
     color: white;
+}
+
+header {
+    background-color: #797270;
 }
 
 header img {
@@ -121,7 +123,6 @@ nav ul.hide {
     text-align: center;
     background-color: #e9ee9d;
     padding: .75rem;
-    box-shadow: 0 3px 10px black;
 }
 
 
@@ -139,12 +140,14 @@ nav {
     position: relative;
     width: 100%;
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: -9px;
 }
 
 #weatherSummary {
     padding: 1rem;
     width: 225px;
-    height: 250px;
+    height: 225px;
 }
 
 #weatherSummary ul{
@@ -180,15 +183,16 @@ nav {
 /* 5 day forecast style rules */
 #forecast {
     padding: 1.5rem;
+    display: none;
 }
 table {
     margin: 0 auto;
     width: 90%;
-    background-color: #5f90b1;
+    background-color: black;
 }
 
 table, th, td {
-    border: 1px solid #5f90b1;
+    border: 1px solid black;
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 th {
@@ -204,13 +208,15 @@ td {
 
 /* Article style rules */
 #articleContainer {
-    position: relative;
     padding: 1.5rem;
 }
 
 #articleContainer img {
+    display: block;
+    margin: 0 auto;
     height: 300px;
     width: 100%;
+    max-width: 500px;
 }
 
 /* Contact information and footer bar style rules */
@@ -239,7 +245,52 @@ footer {
     padding: .5rem;
     background-color: #5f90b1;
 }
-@media (min-width: 900px) {
+
+@media screen and (min-width: 885px) {
+    main {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+
+    #weatherSummary {
+        position: absolute;
+        background-color: #e9ee9d;
+        height: 225px;
+        width: 225px;
+        opacity: 85%;
+        top: 10%;
+        left: 5%;
+    }
+
+    #weatherSummary h2, #weatherSummary li {
+        opacity: none;
+    }
+
+    #forecast {
+        display: block;
+    }
+
+    #articleContainer img {
+        float: right;
+        width: 400px;
+        padding: 1rem;
+    }
+
+    #footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+    }
+    
+    #prestonMap {
+        grid-column: 1/2;
+        max-width: 500px;
+    }
+    #contactInfo {
+            grid-column: 2/3;
+        }
+
     nav ul {
         display: flex;
     }
