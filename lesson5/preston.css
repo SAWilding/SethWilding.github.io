@@ -177,6 +177,31 @@ nav {
     padding-left: 10px;
 }
 
+/* 5 day forecast style rules */
+#forecast {
+    padding: 1.5rem;
+}
+table {
+    margin: 0 auto;
+    width: 90%;
+    background-color: #5f90b1;
+}
+
+table, th, td {
+    border: 1px solid #5f90b1;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+th {
+    font-size: 1.25rem;
+    background-color: #e9ee9d;
+}
+td {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.25rem;
+    background-color: white;
+}
+
 /* Article style rules */
 #articleContainer {
     position: relative;
