@@ -280,7 +280,7 @@ footer {
     }
 
     #weatherSummary h2, #weatherSummary li {
-        opacity: none;
+        opacity: 100%;
     }
 
     #forecast {
