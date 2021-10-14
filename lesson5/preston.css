@@ -40,18 +40,19 @@ nav a:hover {
     color: black;
 }
 nav ul {
+    position: relative;
     padding: 0;
 }
 
 nav li a{
+    position: static;
     border: 1px solid rgba(0,0,0,0.5);
-    margin: 10px 0px 10px;
+    margin: 5px 0px 5px;
     padding: 5px 0px 5px;    
     display: block;
     transition: 0.5s;
     font-size: 1.5em;
     color: white;
-
 }
 
 body {
@@ -99,21 +100,35 @@ img {
 }
 button {
     display: block;
-    height: 50px;
-    width: 100%;
+    height: 10px;
     font-family: "Bree Serif", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     border: 1px solid rgba(0,0,0,0.5);
     background-color: #5f90b1;
     color: white;
     transition: 0.5s;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    height: 100px;
+    width: 100px;
 }
+
 button:hover {
     background-color: #e9ee9d;
     color: black;
 }
 nav ul.hide {
     display: none;
+}
+
+/* Noscript style rules */
+
+noscript {
+    margin: 1rem;
+    background-color: red;
+    color: white;
+    width: 100%;
 }
 
 /* Banner style rules */
@@ -128,9 +143,6 @@ nav ul.hide {
 
 
 /* Weather summary style rules */
-nav {
-    margin-bottom: -20px;
-}
 
 #pageHeader {
     padding: 1rem;
