@@ -42,9 +42,9 @@ document.getElementById("copyrightYear").textContent = year;
 
 // Make banner appear only on fridays //
 function createBanner(day) {
-    if (day == "Friday") {
+    if (day == 5) {
         document.querySelector("#banner").style.display = "block";
     }
-}
-
-createBanner(day);
+};
+var bannerDay = new Date().getDay();
+createBanner(bannerDay);

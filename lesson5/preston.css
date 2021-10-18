@@ -107,11 +107,8 @@ button {
     background-color: #5f90b1;
     color: white;
     transition: 0.5s;
-    position: absolute;
-    top: 8px;
-    right: 15px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 100%;
 }
 
 button:hover {
