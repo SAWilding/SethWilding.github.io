@@ -2,12 +2,14 @@
 function findPokemon() {
     let pokename = document.querySelector("#pokename").value.toLowerCase();
     if (pokename != "") {  
-        fetch(`https://pokeapi.co/api/v2/pokemon/${pokename}`).then(response => response.json()).then(pokemon => addInfo(pokemon));
-    }
+        fetch(`https://pokeapi.co/api/v2/pokemon/${pokename}`)
+        .then(response => response.json())
+        .then(pokemon => addInfo(pokemon))
+        .catch(error => alert("That is an invalid Pokemon name."))};
 }
 
 function deletePokemon() {
-    document.querySelector(".pokemon").remove();
+    document.querySelector("#pokeInfo").textContent = "";
 }
 
 function addInfo(pokemon) {
@@ -17,23 +19,16 @@ function addInfo(pokemon) {
     let container = document.createElement("div");
     let name = document.createElement("h2");
     let sprite = document.createElement("img");
-    let deleteButton = document.createElement("button");
 
     name.textContent = pokemon.species.name.toUpperCase();
-    deleteButton.textContent = "X";
 
     container.setAttribute("class", "pokemon")
     sprite.setAttribute("src", spriteURL);
-    deleteButton.setAttribute("class", "deleteButton");
-
-    deleteButton.addEventListener("click", deletePokemon);
 
     pokeInfo.append(container);
     container.append(name);
     container.append(sprite);
-    addStats(container, pokemon);
-    container.append(deleteButton);
-   
+    addStats(container, pokemon);   
 }
 
 function addStats(container, pokemon) {
@@ -60,6 +55,7 @@ function addStats(container, pokemon) {
     stats.append(specialDefense);
     stats.append(speed);
 };
+
 
 document.querySelector("#search").addEventListener("click", findPokemon);
 

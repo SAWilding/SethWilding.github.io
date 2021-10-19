@@ -45,18 +45,29 @@ input, button, label {
 input {
     position: relative;
     border-radius: 5px 0 0 5px;
-    height: 20px;
+    height: 40px;
     border: 2px solid black;
 }
 
-#searchBar button {
+#search {
     position: relative;
     border-radius: 0 5px 5px 0;
-    height: 26px;
+    height: 46px;
+    width: 60px;
     left: -6px;
     background-color: white;
     border: 2px solid black;
     top: 1px;
+}
+
+#search:hover,
+#deleteButton:hover {
+    background-color: lightgray;
+}
+
+#search:active ,
+#deleteButton:active {
+    background-color: lightyellow;
 }
 
 #searchBar {
@@ -69,10 +80,11 @@ input {
     border-radius: 5px 5px 0 0;
 }
 
-.deleteButton {
-    height: 50px;
-    width: 50px;
-    font-size: 2rem;
-    color: red;
-    margin: 1rem;
+#deleteButton {
+    display: block;
+    height: 40px;
+    width: 100px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
 }
