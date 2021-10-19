@@ -45,6 +45,24 @@ function createBanner(day) {
     if (day == 5) {
         document.querySelector("#banner").style.display = "block";
     }
-};
+}
 var bannerDay = new Date().getDay();
 createBanner(bannerDay);
+
+// Create windchill function //
+
+function buildWC(speed, temp) {
+    let wcTemp = document.getElementById('windchill');
+
+    let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
+    console.log(wc);
+    wc = Math.floor(wc);
+
+    wc = (wc > temp)?temp:wc;
+    wcTemp.innerHTML = wc;
+
+}
+let speed = 5;
+let temp = 76;
+
+buildWC(speed, temp);
