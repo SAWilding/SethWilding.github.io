@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Wild Weather</title>
+    <link rel="shortcut icon" href="../images/wild_weather_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="../images/wild_weather_logo.png" alt="Site plan logo">
+        <div id="siteName">
+            <h1>Wild Weather</h1>
+            <p>Quick, Easy Weather</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../lesson5/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a class = "active" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Weather Gallery</h1>
+            <section id="gallery">
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/cloudy.jpg" alt="Cloudy day"></picture><p>Cloudy day in the mountains</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/foggy.jpg" alt="Foggy day"></picture><p>Foggy day in the forest</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/lightning.jpg" alt="Lightning"></picture><p>Lightning in the night</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/rainbow.jpg" alt="Rainbow"></picture><p>Rainbow in the sky</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/rainy.jpg" alt="Rainy day"></picture><p>Rainy day on the river</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/snowy.jpg" alt="Snowy day"></picture><p>Snowy trail</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/snowy_mountains.jpg" alt="Snowy mountains"></picture><p>Snowy mountains</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/sunny.jpg" alt="Sunny day"></picture><p>Sunny day on the lake</p></div>
+                <div class="imageBox"><picture><img src="https://via.placeholder.com/1200x800" data-src="lazyload_images/windy.jpg" alt="Windy day"></picture><p>Tree being blown in the wind</p></div>
+            </section>
+    </main>
+    <footer>
+        <div id="footerBar">
+            <p>
+                &copy;
+                <span id="copyrightYear"></span> Wild Weather |
+                <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                <span id="dateLastModified"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="gallery.js"></script>
+    
+</body>
+</html>
