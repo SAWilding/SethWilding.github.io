@@ -6,7 +6,8 @@ function preloadImage(img) {
         return;
     }
 
-    img.src = datasrc;
+    img.src = datasrc;    
+    changeClass(img)
 }
 
 const imgOptions = {
@@ -19,12 +20,19 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
         if (!entry.isIntersecting) {
             return;
         } else {
+        
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
+            
         }
     })
 }, imgOptions)
 
 images.forEach(image => {
     imgObserver.observe(image)
+
 })
+
+function changeClass(img) {
+    img.onload = img.setAttribute("class", "load")
+}
