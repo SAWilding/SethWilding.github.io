@@ -1,0 +1,190 @@
+
+#font1 {
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+}
+
+#font2 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+nav li {
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+}
+
+p, li{
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+nav,
+footer,
+nav li a,
+nav li {
+    background-color: #5f90b1;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav a:hover {
+    background-color: #e9ee9d;
+    color: black;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+nav ul {
+    position: relative;
+    padding: 0;
+}
+
+nav li a{
+    position: static;
+    border: 1px solid rgba(0,0,0,0.5);
+    margin: 5px 0px 5px;
+    padding: 5px 0px 5px;    
+    display: block;
+    transition: 0.5s;
+    font-size: 1.5em;
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-color: white;
+}
+
+
+footer a {
+    color: black;
+}
+
+nav,
+header {
+    padding: 0.5em;
+    color: white;
+}
+
+header {
+    background-color: #797270;
+}
+
+header img {
+    height: 100px;
+    display: inline;
+    padding-left: 15px;
+}
+
+#siteName {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#siteName h1, #siteName p {
+    margin: 5px 0px 5px;
+}
+header {
+    display: flex;
+}
+
+
+button {
+    display: block;
+    height: 10px;
+    font-family: "Bree Serif", Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: #5f90b1;
+    color: white;
+    transition: 0.5s;
+    height: 50px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e9ee9d;
+    color: black;
+}
+nav ul.hide {
+    display: none;
+}
+
+#pageHeader {
+    padding: 1rem;
+}
+
+
+
+footer {
+    background-color: #5f90b1;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Form style rules */
+form {
+    margin: 1rem;
+}
+
+input, label, select, textarea{
+    display: block;
+    font-family: "Ubuntu";
+    margin: 0.5rem;
+}
+
+input, select, textarea{
+    margin-bottom: 1rem;
+}
+
+#ratingvalue {
+    position: relative;
+    left: 140px;
+    bottom: 35px;
+}
+
+
+
+.select {
+    position: relative;
+    left: 20px;
+    bottom: 33px;
+}
+
+h2, p {
+    margin: 1rem;
+}
+
+@media screen and (min-width: 885px) {
+    main {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    nav ul li a {
+        margin: 0px;
+        margin-right: -1px;
+        padding: 5px 0px 5px;
+    }
+    button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+}
