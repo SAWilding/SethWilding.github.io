@@ -34,7 +34,7 @@
         <p>Please fill out the form below to give us a report about the weather in your area.  When you have filled out each entry 
             correctly, press the submit button at the bottom.  Thank you for your information!
         </p>
-        <form action="thanks.html">
+        <form action="#" method="post">
             <label for="fullname">Full Name:</label>
             <input type="text" name="fullname" id="fullname" required minlength="5" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$">
 
@@ -61,7 +61,7 @@
                 </datalist>
 
             <label for="severity">Storm severity:</label>
-            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+            <input type="range" id="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 			<span id="ratingvalue">5</span>
             <datalist id="tickmarks">
                 <option value="0">
@@ -86,13 +86,13 @@
             </select>
             
 
-            <label for="danger">Are you in danger?</label>
-            <input type="radio" name="danger" id="yes" value="yes">
-            <label for="yes" class="select">yes</label>
-            <input type="radio" name="danger" id="maybe" value="maybe">
-            <label for="maybe" class="select">maybe</label>
-            <input type="radio" name="danger" id="no" value="no">
-            <label for="no" class="select">no</label>
+            <label for="danger1">Are you in danger?</label>
+            <input type="radio" name="danger" id="danger1" value="yes">
+            <label for="danger1" class="select">yes</label>
+            <input type="radio" name="danger" id="danger2" value="maybe">
+            <label for="danger2" class="select">maybe</label>
+            <input type="radio" name="danger" id="danger3" value="no">
+            <label for="danger3" class="select">no</label>
 
             <label for="comments">Additional Comments:</label>
             <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
