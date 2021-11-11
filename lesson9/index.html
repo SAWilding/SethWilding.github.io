@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/wild_weather_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Home | Wild Weather</title>
+</head>
+<body>
+    <header>
+        <img src="../images/wild_weather_logo.png" alt="Site plan logo">
+        <div id="siteName">
+            <h1>Wild Weather</h1>
+            <p>Quick, Easy Weather</p>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class = "active" href="../lesson9/index.html">Home</a></li>
+            <li><a href="../lesson5/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="townData"></div>
+    </main>
+    <footer>
+        <div id="footerBar">
+            <p>
+                &copy;
+                <span id="copyrightYear"></span> Wild Weather |
+                <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                <span id="dateLastModified"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>
