@@ -145,7 +145,7 @@ fetch(forecastLink)
         // Forecast temperature
         let temp = document.createElement("p");
 
-        let forecastTemp = `${data.list[forecastIndex].main.temp} &deg;F`
+        let forecastTemp = `${Math.round(data.list[forecastIndex].main.temp)} &deg;F`
 
         temp.innerHTML = forecastTemp;
 
