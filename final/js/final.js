@@ -87,6 +87,19 @@ fetch(prestonLink)
         if (dayIndex == 7) {
             dayIndex = 0;
         }
-
     }
+    // Weather alerts
+    if (data.alert) {
+        let alert = document.querySelector("#alert");
+        
+        let event = document.createElement("h2");
+        event.innerHTML = data.alerts.event;
+        let description = document.createElement("p");
+        description.innerHTML = data.alerts.description;
+
+        alert.appendChild(event);
+        alert.appendChild(description);
+    }
+
+
 });

@@ -174,12 +174,13 @@ nav li:active {
 /*Weather ----------------------*/
 
 #weather {
-    margin: 1rem;
+    padding: 1rem;
+    background-color: lightgray;
 }
 
 #forecast h3 {
     margin-top: 0;
-    font-size: 17pt;
+    font-size: 18pt;
 }
 
 #forecast {
@@ -188,18 +189,29 @@ nav li:active {
 }
 
 #forecast div {
+    background-color: white;
     border: 1px solid black;
     border-radius: 2px;
     margin: 1rem;
     padding: 1rem;
 }
 
+#alert {
+    display: none;
+    padding: 1rem;
+    background-color: red;
+    color: white;
+}
+
 /*Advertising ------------------*/
 
 #advertising {
-    margin: 1rem;
-    height: 200px;
-    border: 1px solid black;
+    padding: 1rem;
+}
+
+#advertising img {
+    height: 100px;
+    padding: 1rem;
 }
 
 
@@ -214,14 +226,33 @@ footer h2 {
     text-decoration: underline dashed;
 }
 
+#socialMedia a img {
+    height: 45px;
+    padding: 0.5rem;
+}
+
 
 /*Medium Size Viewport */
 
 @media screen and (min-width: 700px) {
-    
+
+        /*Events ----*/
+        
+        #eventsList {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
         /*forecast ----*/
 
         #forecast {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /*Advertising ---*/
+
+        #adImages {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
         }
