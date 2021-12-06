@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogden Chamber of Commerce | Home</title>
+    <link rel="stylesheet" href="css/final.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo image">
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+    <nav id="primaryNav" class="hide">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="city.html">About Ogden</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="wrapper">
+            <div id="purpose">
+                <h2>Our Purpose</h2>
+                <p>
+                    Founded in 1887, the Ogden-Weber Chamber of Commerce is a nonprofit organization
+                    dedicated to advancing business and community prosperity in northern Utah. Based in Ogden, 
+                    the Chamber represents 775+ organizations in 15 cities and several unincorporated areas in Weber County.
+                </p>
+                <h2>Our Goals</h2>
+                <ul>
+                    <li>Drive commerce</li>
+                    <li>Foster unity</li>
+                    <li>Empower members</li>
+                    <li>Advocate for businesses</li>
+                    <li>Enhance community engagement</li>
+                    <li>Espouse integrity</li>
+                </ul>
+            </div>
+            <div id="heroImage">
+                <img src="images/ogden_entrance.jpg" alt="Entrance sign to Ogden Utah.">
+            </div>
+            <div id="callToAction">
+                <h2>Become a member!</h2>
+                <a href="join.html"><button>Join</button></a>
+            </div>
+            <div id="events">
+                <h2>Upcoming Events</h2>
+                <ul id="eventsList">
+                    <li class="eventCard"><h3>Dec 10</h3> Board of Governors Christmas lunch</li>
+                    <li class="eventCard"><h3>Dec 14</h3> Small business council</li>
+                    <li class="eventCard"><h3>Dec 24</h3> Chamber offices closed</li>
+                </ul>
+            </div>
+            <div id="weather">
+                <h2>Current Weather</h2>
+                <ul>
+                    <li>Tempurature: <span id="curTemp"></span>&deg;f</li>
+                    <li>Description: <span id="curDescription"></span></li>
+                    <li>Humidity: <span id="curHumidity"></span>% </li>
+                </ul>
+                <h2>3 Day Forecast</h2>
+                <div id="forecast"></div>
+            </div>
+            <div id="advertising">
+                <h2>Local Advertising</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact">
+            <h2>Contact Information</h2>
+            <p>2380 Washington Blvd.
+                Suite 290
+                Ogden, UT 84401</p>
+            <p>Monday - Friday 8 AM - 4 PM</p>
+            <p>&#128231; ogdenchamberofcommerce@email.com</p>
+            <p>&#9742; (777)-777-7777</p>
+        </div>
+        <div id="socialMedia">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_icon.png" alt="Facebook icon"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_icon.png" alt="Instagram Icon"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="../images/twitter_icon.png" alt="Twitter icon"></a>
+        </div> 
+    </footer>
+    <script src="js/final.js"></script>
+</body>
+</html>
