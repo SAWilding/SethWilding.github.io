@@ -243,6 +243,14 @@ footer h2 {
     max-width: 1000px;
 }
 
+footer a {
+    color: white;
+}
+
+#lastUpdated {
+    text-align: center;
+}
+
 
 /*Medium Size Viewport */
 
@@ -276,13 +284,9 @@ footer h2 {
             grid-template-columns: 1fr 1fr;
             grid-gap: 1rem;
         }
-        
-        footer a {
-            color: white;
-        }
+    
 
         #lastUpdated {
-            text-align: center;
             grid-column: 1/3;
         }
     

@@ -181,6 +181,13 @@ footer h2 {
     max-width: 1000px;
 }
 
+footer a {
+    color: white;
+}
+
+#lastUpdated {
+    text-align: center;
+}
 
 
 
@@ -199,12 +206,8 @@ footer h2 {
             justify-self: end;
             margin-right: 1rem;
         }
-        footer a {
-            color: white;
-        }
 
         #lastUpdated {
-            text-align: center;
             grid-column: 1/3;
         }
     
