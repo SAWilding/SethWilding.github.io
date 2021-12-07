@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ogden Chamber of Commerce | Home</title>
-    <link rel="stylesheet" href="css/final.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -58,6 +60,7 @@
                     <li class="eventCard"><h3>Dec 24</h3> Chamber offices closed</li>
                 </ul>
             </div>
+            <hr>
             <div id="weather">
                 <h2>Current Weather</h2>
                 <ul>
@@ -68,6 +71,7 @@
                 <h2>3 Day Forecast</h2>
                 <div id="forecast"></div>
             </div>
+            <hr>
             <div id="advertising">
                 <h2>Local Company Highlight</h2>
                 <div id="adImages">
@@ -79,22 +83,32 @@
         </div>
     </main>
     <footer>
-        <div id="contact">
-            <h2>Contact Information</h2>
-            <p>2380 Washington Blvd.
-                Suite 290
-                Ogden, UT 84401</p>
-            <p>Monday - Friday 8 AM - 4 PM</p>
-            <p>&#128231; ogdenchamberofcommerce@email.com</p>
-            <p>&#9742; (777)-777-7777</p>
-        </div>
-        <div id="socialMedia">
-            <h2>Follow Us</h2>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_icon.png" alt="Facebook icon"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_icon.png" alt="Instagram Icon"></a>
-            <a href="https://twitter.com/?lang=en" target="_blank"><img src="../images/twitter_icon.png" alt="Twitter icon"></a>
+        <div class="align">
+            <div id="contact">
+                <h2>Contact Information</h2>
+                <p>2380 Washington Blvd.
+                    Suite 290
+                    Ogden, UT 84401</p>
+                <p>Monday - Friday 8 AM - 4 PM</p>
+                <p>&#128231; ogdenchamberofcommerce@email.com</p>
+                <p>&#9742; (777)-777-7777</p>
+            </div>
+            <div id="socialMedia">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_icon.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_icon.png" alt="Instagram Icon"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../images/twitter_icon.png" alt="Twitter icon"></a>
+            </div>
+            <div id="lastUpdated">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> Seth Wilding |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
         </div> 
     </footer>
-    <script src="js/final.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

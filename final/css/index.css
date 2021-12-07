@@ -175,7 +175,6 @@ nav li:active {
 
 #weather {
     padding: 1rem;
-    background-color: lightgray;
 }
 
 #forecast h3 {
@@ -226,9 +225,22 @@ footer h2 {
     text-decoration: underline dashed;
 }
 
+#contact {
+    max-width: 400px;
+}
+
+#socialMedia {
+    max-width: 400px;
+}
+
 #socialMedia a img {
     height: 45px;
     padding: 0.5rem;
+}
+
+.align {
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 
@@ -255,6 +267,23 @@ footer h2 {
         #adImages {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /*Footer ----*/
+
+        .align {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+        
+        footer a {
+            color: white;
+        }
+
+        #lastUpdated {
+            text-align: center;
+            grid-column: 1/3;
         }
     
 }
@@ -313,6 +342,16 @@ footer h2 {
     main {
         margin: 0 auto;
         max-width: 1000px;
+    }
+
+    /*Call to action ----*/
+
+    #callToAction {
+        position: absolute;
+        top: 575px;
+        left: 350px;
+        width: 400px;
+        opacity: 75%;
     }
 
 

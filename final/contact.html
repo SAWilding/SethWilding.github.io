@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/final.css">
+    <title>Ogden Chamber of Commerce | Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,8 +24,69 @@
             <li><a href="#" class="active">Contact</a></li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
-    <script src="js/final.js"></script>
+    <main>
+        <div id="board">
+            <h2>Board of Directors</h2>
+            <ul>
+                <li>Chuck Leonhardt - Chamber President</li>
+                <li>Kimberli Green - Board Chair</li>
+                <li>Mark Adams - Board Vice Chair</li>
+                <li>Shaun Myers - Board Treasurer</li>
+            </ul>
+
+        </div>
+        <div id="contact1">
+            <h2>Contact Information</h2>
+            <p>2380 Washington Blvd.
+                Suite 290
+                Ogden, UT 84401</p>
+            <p>Monday - Friday 8 AM - 4 PM</p>
+            <p>&#128231; ogdenchamberofcommerce@email.com</p>
+            <p>&#9742; (777)-777-7777</p>
+        </div>
+        <div id="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.320333724627!2d-111.97222478548119!3d41.22320207062844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530edf1a15e05d%3A0xbe9a76083e682fd5!2sOgden-Weber%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1638835817804!5m2!1sen!2sus" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <div id="message">
+            <h2>Send Us A Messeage</h2>
+            <form action="thanks.html">
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" required minlength="5" pattern="^([A-Za-z]+[,.]?[ ]?|[A-Za-z]+['-]?)+$">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="123abc@example.com" required>
+
+                <label for="tel">Phone number:</label>
+                <input type="tel" name="tel" id="tel" required>
+
+                <label for="comments">Comment:</label>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+                <input type="submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="align">
+            <div id="socialMedia">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook_icon.png" alt="Facebook icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram_icon.png" alt="Instagram Icon"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="../images/twitter_icon.png" alt="Twitter icon"></a>
+            </div>
+            <div id="lastUpdated">
+                <p>
+                    &copy;
+                    <span id="copyrightYear"></span> Seth Wilding |
+                    <a href=" https://developer.mozilla.org/en-US" target="_blank">MDN Documentation Site</a> | BYU-Idaho | Last updated:
+                    <span id="dateLastModified"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/other.js"></script>
 </body>
 </html>
