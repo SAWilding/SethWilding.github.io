@@ -146,6 +146,29 @@ label {
     display: block;
     padding-top: 1rem;
 }
+
+form #submit {
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+    position: static;
+    display: block;
+    box-shadow: 0 3px #999;
+    border-radius: 2px;
+    height: 45px;
+    background-color: #42BFDD;
+}
+
+form #submit:active {
+    box-shadow: none;
+}
+
+form #submit:active {
+    transform: translateY(2px);
+    box-shadow: none;
+
+}
+
 #board {
     padding: 1rem;
     padding-bottom: 0;

@@ -24,7 +24,108 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main></main>
+    <main>
+        <h1>Join the Ogden Chamber of Commerce Today!</h1>
+        <div id="why">
+            <h2>Why Become a Member</h2>
+            <p>Whether you’re a small business just getting started or a
+                 well-established organization, the Ogden-Weber Chamber of 
+                 Commerce provides unique opportunities to help you reach 
+                 new customers, invest in your employees and improve our 
+                 community.</p>
+        </div>
+        <div id="membershipOptions">
+            <h2>Membership Options</h2>
+            <div class="flex">
+                <div id="nonprofit" class="card">
+                    <h3>Non-pofit</h3>
+                        
+                        <li>$100</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Directory Listing</li>
+                        </ul>
+        
+                </div>
+                <div id="bronze" class="card">
+                    <h3>Bronze</h3>
+
+                        <li>$200</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Directory Listing</li>
+                            <li>Business Trainings</li>
+                        </ul>
+            
+                </div>
+                <div id="silver" class="card">
+                    <h3>Silver</h3>
+               
+                        <li>$400</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Directory Listing</li>
+                            <li>Business Trainings</li>
+                            <li>Social Media Posts</li>
+                        </ul>
+          
+                </div>
+                <div id="gold" class="card">
+                    <h3>Gold</h3>
+            
+                        <li>$1000</li>
+                        <li>Perks:</li>
+                        <ul class="checks">
+                            <li>Directory Listing</li>
+                            <li>Business Trainings</li>
+                            <li>Social Media Posts</li>
+                            <li>Sponsorships</li>
+                        </ul>
+            
+                </div>
+            </div>
+        </div>
+        <form action="thanks.html">
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" required pattern="[A-Za-z]{1,32}">
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required pattern="[A-Za-z]{1,32}">
+
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" pattern="[A-Za-z].{1,5}">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="123abc@example.com">
+
+            <label for="tel">Phone number:</label>
+            <input type="tel" name="tel" id="tel">
+
+            <label for="business">Business Name:</label>
+            <input type="text" name="business" id="business" required>
+
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address">
+
+            <label for="website">Website URL:</label>
+            <input type="url" name="website" id="address">
+
+            <label for="comments">Business Description:</label>
+            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+
+            <label for="membership">Membership Level:</label>
+            <select name="regions" id="membership">
+                <option value="" disabled selected>Select Membership ...</option>
+                <option value="nonprofit">Non-profit ($100)</option>
+                <option value="bronze">Bronze ($200)</option>
+                <option value="silver">Silver ($400)</option>
+                <option value="gold">Gold ($1000)</option>
+            </select>
+
+            <input type="submit" id="submit">
+        </form>
+
+    </main>
     <footer>
         <div class="align">
             <div id="contact">

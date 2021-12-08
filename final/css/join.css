@@ -115,7 +115,81 @@ nav li:active {
 
 
 /*Main -----------------------------------------------*/
+h1 {
+    text-align: center;
+}
 
+#why {
+    padding: 1rem;
+}
+
+#membershipOptions {
+    padding: 1rem;
+}
+
+#membershipOptions li {
+    list-style: none;
+}
+
+.checks {
+    padding: 0;
+}
+
+.checks li:before {
+    content: "✓  ";
+    color: green;
+}
+
+#membershipOptions .flex {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+    width: 167px;
+}
+
+form {
+    padding: 1rem;
+}
+
+input, textarea, select{
+    margin: 0.5rem;
+    display: block;
+}
+
+label {
+    display: block;
+    padding-top: 0.5rem;
+    padding-bottom: -15px;
+}
+
+form #submit {
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+    position: static;
+    display: block;
+    box-shadow: 0 3px #999;
+    border-radius: 2px;
+    height: 45px;
+    background-color: #42BFDD;
+}
+
+form #submit:active {
+    box-shadow: none;
+}
+
+form #submit:active {
+    transform: translateY(2px);
+    box-shadow: none;
+
+}
 
 /*Footer ---------------------------------------------*/
 footer {
