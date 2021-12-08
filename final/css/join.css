@@ -158,6 +158,27 @@ form {
     padding: 1rem;
 }
 
+#form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#form fieldset {
+    max-width: 100%;
+    width: 318px;
+    margin: 0.5rem;
+}
+
+#submit {
+    margin: 1rem auto;
+    
+}
+
+textarea {
+    max-width: 100%;
+}
+
 input, textarea, select{
     margin: 0.5rem;
     display: block;
