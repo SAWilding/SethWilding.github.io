@@ -139,6 +139,7 @@ main h1 {
 .card img {
     padding: 0.5rem;
     max-width: 200px;
+    max-height: 100px;
 }
 
 .button {
