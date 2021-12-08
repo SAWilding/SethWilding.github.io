@@ -1,0 +1,46 @@
+{
+    "companies": [
+      {
+        "name": "Boyle Appliance",
+        "address": "146 36th St, Ogden, UT 84405",
+        "website": "https://www.boyleappliance.com",
+        "logo": "images/advertisement[0].png"
+      },
+      {
+        "name": "Alpine Sports",
+        "address": "1165 Patterson St, Ogden, UT 84403",
+        "website": "http://alpinesportsutah.com",
+        "logo": "images/advertisement[1].png"
+      },
+      {
+        "name": "Megaplex Theatres",
+        "address": "2351 Kiesel Ave, Ogden, UT 84401",
+        "website": "https://www.megaplextheatres.com/thejunction",
+        "logo": "images/advertisement[2].png"
+      },
+      {
+        "name": "Northrop Grumman",
+        "address": "4336 S 1650 W, Ogden, UT 84405",
+        "website": "https://www.northropgrumman.com",
+        "logo": "images/advertisement[3].svg.png"
+      },
+      {
+        "name": "Warrens Craftburger",
+        "address": "258 25th Street Ogden UT 84401",
+        "website": "https://mycraftburger.com",
+        "logo": "images/advertisement[4].png"
+      },
+      {
+        "name": "Weber State University",
+        "address": "1265 Village Dr Dept 4018 Hurst Center Ste 204 Ogden UT 84408-4018",
+        "website": "https://www.weber.edu/",
+        "logo": "images/advertisement[5].png"
+      },
+      {
+        "name": "Chick-fil-a ",
+        "address": "4067 Riverdale Road Riverdale UT 84405-1517",
+        "website": "https://www.cfarestaurant.com/riverdalecity/home",
+        "logo": "images/advertisement[6].svg.png"
+      }
+      ]
+}
