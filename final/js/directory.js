@@ -58,7 +58,7 @@ fetch(URL)
     for (let i=0; i < data.companies.length; i++) {
     let info = document.createElement("div");
     let card = document.createElement("div")
-    card.setAttribute("class", "card")
+    card.setAttribute("class", "card");
     let name = document.createElement("h2");
     let address = document.createElement("p");
     let website = document.createElement("a");
@@ -70,6 +70,7 @@ fetch(URL)
     address.textContent = data.companies[i].address;
     website.innerHTML = "&#127760; website";
     logo.setAttribute("src", data.companies[i].logo);
+    logo.setAttribute("alt", "Company logo");
 
     cards = document.querySelector("#cards");
     info.appendChild(name);

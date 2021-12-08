@@ -131,11 +131,15 @@ h1 {
     list-style: none;
 }
 
+#membershipOptions ul {
+    padding: 0;
+}
+
 .checks {
     padding: 0;
 }
 
-.checks li:before {
+.checks p:before {
     content: "✓  ";
     color: green;
 }
@@ -187,7 +191,6 @@ input, textarea, select{
 label {
     display: block;
     padding-top: 0.5rem;
-    padding-bottom: -15px;
 }
 
 form #submit {

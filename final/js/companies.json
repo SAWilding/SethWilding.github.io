@@ -4,19 +4,19 @@
         "name": "Boyle Appliance",
         "address": "146 36th St, Ogden, UT 84405",
         "website": "https://www.boyleappliance.com",
-        "logo": "images/advertisement[0].png"
+        "logo": "images/advertisement(0).png"
       },
       {
         "name": "Alpine Sports",
         "address": "1165 Patterson St, Ogden, UT 84403",
         "website": "http://alpinesportsutah.com",
-        "logo": "images/advertisement[1].png"
+        "logo": "images/advertisement(1).png"
       },
       {
         "name": "Megaplex Theatres",
         "address": "2351 Kiesel Ave, Ogden, UT 84401",
         "website": "https://www.megaplextheatres.com/thejunction",
-        "logo": "images/advertisement[2].png"
+        "logo": "images/advertisement(2).png"
       },
       {
         "name": "Northrop Grumman",
@@ -32,7 +32,7 @@
       },
       {
         "name": "Weber State University",
-        "address": "1265 Village Dr Dept 4018 Hurst Center Ste 204 Ogden UT 84408-4018",
+        "address": "3848 Harrison Blvd, Ogden, UT 84408",
         "website": "https://www.weber.edu/",
         "logo": "images/advertisement[5].png"
       },
